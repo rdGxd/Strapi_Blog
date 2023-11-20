@@ -8,7 +8,7 @@
     "start": "strapi start",
     "build": "strapi build",
     "strapi": "strapi",
-    "postinstall": "cd plugins/wysiwyg && npm i"
+    "postinstall": "cd plugins/wysiwyg && pnpm i"
   },
   "dependencies": {
     "@strapi/plugin-cloud": "4.15.4",
@@ -33,5 +33,10 @@
     "node": ">=18.0.0 <=20.x.x",
     "npm": ">=6.0.0"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "pnpm": {
+    "overrides": {
+      "axios@>=0.8.1 <1.6.0": ">=1.6.0"
+    }
+  }
 }
