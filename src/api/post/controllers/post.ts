@@ -2,7 +2,7 @@
  * post controller
  */
 
-import { factories } from '@strapi/strapi'
+import { factories } from "@strapi/strapi";
 
 module.exports = factories.createCoreController("api::post.post", {
   count(ctx) {
