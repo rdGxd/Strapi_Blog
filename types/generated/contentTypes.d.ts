@@ -811,7 +811,7 @@ export interface ApiSettingSetting extends Schema.SingleType {
     blogDescription: Attribute.String & Attribute.Required;
     logo: Attribute.Media;
     menuLink: Attribute.Component<'menu.menu-link', true>;
-    text: Attribute.Blocks & Attribute.Required;
+    footer: Attribute.Blocks & Attribute.Required;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
