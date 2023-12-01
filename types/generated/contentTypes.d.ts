@@ -757,6 +757,7 @@ export interface ApiPostPost extends Schema.CollectionType {
     singularName: 'post';
     pluralName: 'posts';
     displayName: 'post';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -764,7 +765,7 @@ export interface ApiPostPost extends Schema.CollectionType {
   attributes: {
     title: Attribute.String & Attribute.Required;
     slug: Attribute.UID<'api::post.post', 'title'> & Attribute.Required;
-    cover: Attribute.Media;
+    cover: Attribute.Media & Attribute.Required;
     excerpt: Attribute.Text &
       Attribute.Required &
       Attribute.SetMinMaxLength<{
